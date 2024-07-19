@@ -3,9 +3,6 @@ using namespace std;
 
 void solve(int tc = 1)
 {
-	int l, r;
-	cin >> l >> r;
-	cout << l << " " << 2 * l << '\n';
 }
 
 int main()

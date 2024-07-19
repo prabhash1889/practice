@@ -3,9 +3,19 @@ using namespace std;
 
 void solve(int tc = 1)
 {
-	int l, r;
-	cin >> l >> r;
-	cout << l << " " << 2 * l << '\n';
+	int n;
+	cin >> n;
+	string s, t;
+	cin >> s >> t;
+	for (int i = 0; i < n; i++)
+	{
+		if (t[i] == 'o')
+		{
+			cout << "YES" << '\n';
+			return;
+		}
+	}
+	cout << "NO" << '\n';
 }
 
 int main()
