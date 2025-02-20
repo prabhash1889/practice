@@ -7,22 +7,24 @@ ll n, p[mxN];
 
 void solve(int tc = 0)
 {
-    int64_t n;
-    cin >> n;
-    cout << n << " ";
-    while (n != 1)
+    string s;
+    cin >> s;
+    int ans = 1, c = 0;
+    char l = 'A';
+    for (char ch : s)
     {
-        if (n % 2 == 0)
+        if (ch == l)
         {
-            n = n / 2;
-            cout << n << " ";
+            ++c;
+            ans = max(c, ans);
         }
         else
         {
-            n = n * 3 + 1;
-            cout << n << " ";
+            l = ch;
+            c = 1;
         }
     }
+    cout << ans << '\n';
 }
 
 int main()
